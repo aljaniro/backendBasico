@@ -13,7 +13,7 @@ export const getbyid = async (req, res) => {
   console.log(rows);
   if (rows.length <= 0) {
     return res.status(400).json({
-      message: "no se encontro ni verga",
+      message: "no se encontro la persona",
     });
   }
   res.json(rows[0]);
